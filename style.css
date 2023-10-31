@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+body{
+    background-color: rgb(24, 27, 24);
+}
+.landPage{
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
+
+nav{
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+
+    
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type:none ;
+    background-color: black;
+    color: white;
+    height: 8vh;
+    width: 100%;
+
+
+}
+nav ul li{
+    padding: 0 12px;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 44px;
+    padding: 0 6px 3px 3px;
+
+}
+
+.container{
+    height: 72vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 10px auto;
+    width: 70%;
+    background-color: black;
+    border-radius: 10px;
+    background-image: url(containerBg.jpg.crdownload); 
+    background-size: 100%;
+    box-shadow: 10px 10px 10px rgb(147, 164, 147);
+    
+}
+
+
+.bottom{
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+
+#myProgressbar{
+    width: 85vw;
+    cursor: pointer;
+}
+.icon{
+    margin-top: 14px;
+}
+
+.icon i{
+    width: 44px;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+.songlist{
+    margin-left: 40px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 60%;
+}
+
+.songlistitem{
+    margin-top: 50px;
+    overflow: scroll;
+    height: 450px;
+}
+.songlistitem::-webkit-scrollbar {
+    display: none;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    font-family: 'Varela Round', sans-serif;
+    color: black;
+    width: 80%;
+    margin: 8px 0;
+    justify-content:space-between ;
+    align-items: center;
+    border-radius: 34px;
+    padding-right: 23px;
+   
+}
+.songItem img{
+    width:40px;
+    margin: 0px 18px;
+    border-radius: 34px;
+}
+.songItem #playbuttom{
+    margin-left: 8px;
+    cursor: pointer;
+}
+.songInfo{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 8vw;
+    margin-top: 24px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+.songItemPlay{
+    margin-left: 10px;
+}
